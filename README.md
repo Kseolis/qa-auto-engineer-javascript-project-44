@@ -8,4 +8,4 @@
 
 
 brain-even 
-<script src="https://asciinema.org/a/WQpG531hWNbf7D60qFQ3Hrtxw.js" id="asciicast-WQpG531hWNbf7D60qFQ3Hrtxw" async="true"></script>
+[![asciicast](https://asciinema.org/a/WQpG531hWNbf7D60qFQ3Hrtxw.svg)](https://asciinema.org/a/WQpG531hWNbf7D60qFQ3Hrtxw)
