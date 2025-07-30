@@ -5,3 +5,7 @@
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Kseolis_qa-auto-engineer-javascript-project-44&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Kseolis_qa-auto-engineer-javascript-project-44)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Kseolis_qa-auto-engineer-javascript-project-44&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Kseolis_qa-auto-engineer-javascript-project-44)
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=Kseolis_qa-auto-engineer-javascript-project-44&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=Kseolis_qa-auto-engineer-javascript-project-44)
+
+
+brain-even 
+<script src="https://asciinema.org/a/WQpG531hWNbf7D60qFQ3Hrtxw.js" id="asciicast-WQpG531hWNbf7D60qFQ3Hrtxw" async="true"></script>
