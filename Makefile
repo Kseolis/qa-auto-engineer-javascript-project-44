@@ -1,7 +1,7 @@
 install:
 	npm ci
 start-game:
-	node bin/index.js
+	node bin/cli.js
 publish:
 	npm publish --dry-run
 lint:

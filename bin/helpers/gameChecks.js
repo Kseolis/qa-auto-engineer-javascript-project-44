@@ -12,4 +12,3 @@ export const calculateResult = (num1, operator, num2) => {
       throw new Error(`Unknown operator: ${operator}`)
   }
 }
-

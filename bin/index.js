@@ -1,17 +1,18 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync'
+import { gameMenu } from './helpers/gameMenu.js'
 
 const ROUNDS_TO_WIN = 3
 
-export const runGame = (generateQuestionAndAnswer) => {
+export const runGame = () => {
   console.log('Welcome to the Brain Games!')
   const name = readlineSync.question('May I have your name? ')
   console.log(`Hello, ${name}!\n`)
-  console.log(gameRules)
+  const game = gameMenu()
 
   for (let i = 0; i < ROUNDS_TO_WIN; i += 1) {
-    const { question, correctAnswer } = generateQuestionAndAnswer()
-    const userAnswer = readlineSync.question(`Question: ${question}\nYour answer: `)
+    const { question, correctAnswer } = game.getQuestionAndAnswer()
+    const userAnswer = readlineSync.question(`Question: ${question} \nYour answer: `)
 
     if (userAnswer === correctAnswer.toString()) {
       console.log('Correct!')
