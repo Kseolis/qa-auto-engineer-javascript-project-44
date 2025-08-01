@@ -20,6 +20,7 @@
   "bin": {
     "brain-even": "bin/games/EvenGame.js",
     "brain-calc": "bin/games/CalcGame.js",
+    "brain-gsd": "bin/games/GsdGame.js",
     "brain-games": "bin/cli.js"
   },
   "dependencies": {

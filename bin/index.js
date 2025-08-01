@@ -10,7 +10,7 @@ export const runGame = () => {
   console.log(`Hello, ${name}!\n`)
   const game = gameMenu()
 
-  for (let i = 0; i < ROUNDS_TO_WIN; i += 1) {
+  for (let i = 0; i < ROUNDS_TO_WIN; i++) {
     const { question, correctAnswer } = game.getQuestionAndAnswer()
     const userAnswer = readlineSync.question(`Question: ${question} \nYour answer: `)
 

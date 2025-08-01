@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { getRandomNumber, getRandomOperator } from '../helpers/randomGenerator.js'
-import { calculateResult } from '../helpers/gameChecks.js'
+import { getCalcResult } from '../helpers/gameChecks.js'
 
 export class CalcGame {
   min = 1
@@ -16,7 +16,7 @@ export class CalcGame {
     const operator = getRandomOperator()
 
     const question = `${num1} ${operator} ${num2}`
-    const correctAnswer = calculateResult(num1, operator, num2)
+    const correctAnswer = getCalcResult(num1, operator, num2)
     return { question, correctAnswer }
   }
 }
