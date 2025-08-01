@@ -2,6 +2,7 @@ import readlineSync from 'readline-sync'
 import { EvenGame } from '../games/EvenGame.js'
 import { CalcGame } from '../games/CalcGame.js'
 import { GsdGame } from '../games/GsdGame.js'
+import { ProgressionGame } from '../games/ProgressionGame.js'
 import { validateInput } from './validate-input.js'
 
 export const gameMenu = () => {
@@ -9,6 +10,7 @@ export const gameMenu = () => {
   console.log('1 - Even')
   console.log('2 - Calc')
   console.log('3 - Gsd')
+  console.log('4 - Progression')
   console.log('0 - Exit\n')
   const gameNumber = readlineSync.question('Your choice: ')
 
@@ -25,6 +27,8 @@ export const gameMenu = () => {
       return new CalcGame()
     case '3':
       return new GsdGame()
+    case '4':
+      return new ProgressionGame()
     default:
       console.log(`Invalid game number: ${gameNumber}`)
       process.exit(0)
