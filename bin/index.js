@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync'
-import { gameMenu } from './helpers/gameMenu.js'
+import { gameMenu } from './helpers/game-menu.js'
 
 const ROUNDS_TO_WIN = 3
 
@@ -15,13 +15,12 @@ export const runGame = () => {
     const userAnswer = readlineSync.question(`Question: ${question} \nYour answer: `)
 
     if (userAnswer === correctAnswer.toString()) {
-      console.log('Correct!')
-    }
-    else {
+      console.log('\nCorrect!')
+    } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
-      console.log(`Let's try again, ${name}!`)
+      console.log(`Let's try again, ${name}!\n`)
       return
     }
   }
-  console.log(`Congratulations, ${name}!`)
+  console.log(`Congratulations, ${name}!\n`)
 }

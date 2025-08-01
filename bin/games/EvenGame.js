@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { getRandomNumber } from '../helpers/randomGenerator.js'
-import { isEven } from '../helpers/gameChecks.js'
+import { getRandomNumber } from '../helpers/random-generator.js'
+import { isEven } from '../helpers/game-checks.js'
 
 export class EvenGame {
   min = 1

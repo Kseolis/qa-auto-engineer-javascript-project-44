@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { getRandomNumber, getRandomOperator } from '../helpers/randomGenerator.js'
-import { getCalcResult } from '../helpers/gameChecks.js'
+import { getRandomNumber, getRandomOperator } from '../helpers/random-generator.js'
+import { getCalcResult } from '../helpers/game-checks.js'
 
 export class CalcGame {
   min = 1

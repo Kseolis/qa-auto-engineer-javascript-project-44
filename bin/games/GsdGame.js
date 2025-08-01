@@ -1,5 +1,5 @@
-import { getRandomNumber } from '../helpers/randomGenerator.js'
-import { getGsd } from '../helpers/gameChecks.js'
+import { getRandomNumber } from '../helpers/random-generator.js'
+import { getGsd } from '../helpers/game-checks.js'
 
 export class GsdGame {
   constructor() {
