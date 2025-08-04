@@ -21,7 +21,7 @@
     "brain-games": "bin/index.js",
     "brain-even": "bin/gameRunners/brain-even.js",
     "brain-calc": "bin/gameRunners/brain-calc.js",
-    "brain-gsd": "bin/gameRunners/brain-gsd.js",
+    "brain-gcd": "bin/gameRunners/brain-gcd.js",
     "brain-progression": "bin/gameRunners/brain-progression.js",
     "brain-prime": "bin/gameRunners/brain-prime.js"
   },
