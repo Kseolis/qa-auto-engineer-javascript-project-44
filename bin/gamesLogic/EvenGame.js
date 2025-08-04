@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import { getRandomNumber } from '../helpers/random-generator.js'
 import { isEven } from '../helpers/game-checks.js'
 

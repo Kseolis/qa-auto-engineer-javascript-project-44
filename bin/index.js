@@ -1,22 +1,21 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync'
-import { gameMenu } from './helpers/game-menu.js'
+
+console.log('Welcome to the Brain Games!')
+const name = readlineSync.question('May I have your name? ')
+console.log(`Hello, ${name}!\n`)
 
 const ROUNDS_TO_WIN = 3
 
-export const runGame = () => {
-  console.log('Welcome to the Brain Games!')
-  const name = readlineSync.question('May I have your name? ')
-  console.log(`Hello, ${name}!\n`)
-  const game = gameMenu()
-
+export const runGame = (game) => {
   for (let i = 0; i < ROUNDS_TO_WIN; i++) {
     const { question, correctAnswer } = game.getQuestionAndAnswer()
     const userAnswer = readlineSync.question(`Question: ${question} \nYour answer: `)
 
     if (userAnswer === correctAnswer.toString()) {
       console.log('\nCorrect!')
-    } else {
+    }
+    else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
       console.log(`Let's try again, ${name}!\n`)
       return

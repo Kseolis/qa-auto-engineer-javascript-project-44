@@ -1,7 +1,7 @@
 install:
 	npm ci
-start-game:
-	node bin/cli.js
+brain-games:
+	node bin/index.js
 publish:
 	npm publish --dry-run
 lint:

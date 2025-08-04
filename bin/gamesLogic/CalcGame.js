@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import { getRandomNumber, getRandomOperator } from '../helpers/random-generator.js'
 import { getCalcResult } from '../helpers/game-checks.js'
 
