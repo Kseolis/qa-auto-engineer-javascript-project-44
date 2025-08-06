@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { GsdGame } from '../gamesLogic/GsdGame.js'
+import { gcdGameLogic } from '../src/games/gcd-game.js'
 import { runGame } from '../index.js'
 
-runGame(new GsdGame())
+runGame(gcdGameLogic)

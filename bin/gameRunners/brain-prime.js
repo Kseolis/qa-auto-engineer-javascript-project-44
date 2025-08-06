@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { PrimeGame } from '../gamesLogic/PrimeGame.js'
+import { primeGameLogic } from '../src/games/prime-game.js'
 import { runGame } from '../index.js'
 
-runGame(new PrimeGame())
+runGame(primeGameLogic)
