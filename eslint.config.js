@@ -7,7 +7,7 @@ export default [
   pluginJs.configs.recommended,
   {
     files: [
-      '**/*.{js,ts,tsx}',
+      '**/*.js',
     ],
   },
   {
