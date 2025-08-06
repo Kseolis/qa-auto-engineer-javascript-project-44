@@ -25,4 +25,3 @@ export const gcdGameLogic = () => {
 
   return { question, correctAnswer }
 }
-

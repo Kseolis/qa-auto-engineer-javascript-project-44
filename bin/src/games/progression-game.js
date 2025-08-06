@@ -8,7 +8,8 @@ const makeProgression = (start, step, length, hiddenIndex) => {
     if (i === hiddenIndex) {
       correctAnswer = number
       question += '.. '
-    } else {
+    }
+    else {
       question += `${number.toString() + ' '}`
     }
   }
@@ -16,13 +17,13 @@ const makeProgression = (start, step, length, hiddenIndex) => {
 }
 
 export const progressionGameLogic = () => {
-  console.log("brain-progression\n")
+  console.log('brain-progression\n')
   console.log('What number is missing in the progression?')
 
   const start = getRandomNumber(1, 100)
   const step = getRandomNumber(1, 10)
   const length = getRandomNumber(5, 10)
   const hiddenIndex = getRandomNumber(0, length - 1)
-  
+
   return makeProgression(start, step, length, hiddenIndex)
 }
