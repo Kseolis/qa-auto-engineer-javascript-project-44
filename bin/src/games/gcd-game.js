@@ -13,7 +13,6 @@ const getGcd = (num1, num2) => {
 }
 
 export const gcdGameLogic = () => {
-  console.log("brain-gcd\n")
   console.log('Find the greatest common divisor of given numbers.')
   const minNumber = 1
   const maxNumber = 100

@@ -6,7 +6,7 @@ export const evenGameLogic = () => {
   const yes = "yes"
   const no = "no"
 
-  console.log(`Answer ${yes} if the number is even, otherwise answer ${no}.`)
+  console.log(`Answer "${yes}" if the number is even, otherwise answer "${no}".`)
 
   const min = 1
   const max = 100

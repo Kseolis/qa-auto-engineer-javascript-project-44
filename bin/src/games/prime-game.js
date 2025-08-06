@@ -9,7 +9,6 @@ const isPrime = (num) => {
 }
 
 export const primeGameLogic = () => {
-  const brainPrime = "brain-prime"
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".')
 
   const question = getRandomNumber(1, 100)
