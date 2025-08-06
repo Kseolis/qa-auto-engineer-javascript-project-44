@@ -1,6 +1,8 @@
 import { getRandomNumber } from '../helpers/random-generator.js'
 
 const makeProgression = (start, step, length, hiddenIndex) => {
+  let question = ''
+  let correctAnswer = ''
   for (let i = 0; i < length; i++) {
     const number = start + i * step
     if (i === hiddenIndex) {
@@ -16,9 +18,6 @@ const makeProgression = (start, step, length, hiddenIndex) => {
 export const progressionGameLogic = () => {
   console.log("brain-progression\n")
   console.log('What number is missing in the progression?')
-
-  let question = ''
-  let correctAnswer = ''
 
   const start = getRandomNumber(1, 100)
   const step = getRandomNumber(1, 10)
