@@ -5,10 +5,10 @@ console.log('Welcome to the Brain Games!')
 const name = readlineSync.question('May I have your name? ')
 console.log(`Hello, ${name}!\n`)
 
-const ROUNDS_TO_WIN = 3
+const roundsCount = 3
 
 export const runGame = (game) => {
-  for (let i = 0; i < ROUNDS_TO_WIN; i++) {
+  for (let i = 0; i < roundsCount; i++) {
     const { question, correctAnswer } = game.getQuestionAndAnswer()
     const userAnswer = readlineSync.question(`Question: ${question} \nYour answer: `)
 
