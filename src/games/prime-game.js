@@ -8,7 +8,7 @@ const isPrime = (num) => {
   return true
 }
 
-export const primeGameLogic = () => {
+export const generatePrimeRound = () => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".')
 
   const question = getRandomNumber(1, 100)

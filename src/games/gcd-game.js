@@ -12,7 +12,7 @@ const getGcd = (num1, num2) => {
   return nod
 }
 
-export const gcdGameLogic = () => {
+export const generateGcdRound = () => {
   console.log('Find the greatest common divisor of given numbers.')
   const minNumber = 1
   const maxNumber = 100

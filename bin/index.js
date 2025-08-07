@@ -7,9 +7,9 @@ console.log(`Hello, ${name}!\n`)
 
 const roundsCount = 3
 
-export const runGame = (game) => {
+export const runGame = (generateGameRound) => {
   for (let i = 0; i < roundsCount; i++) {
-    const { question, correctAnswer } = game()
+    const { question, correctAnswer } = generateGameRound()
     const userAnswer = readlineSync.question(`Question: ${question} \nYour answer: `)
 
     if (userAnswer === correctAnswer.toString()) {

@@ -21,8 +21,7 @@ const getCalcResult = (num1, operator, num2) => {
   }
 }
 
-export const calcGameLogic = () => {
-  console.log('brain-calc\n')
+export const generateCalculationRound = () => {
   console.log('What is the result of the expression?')
 
   const num1 = getRandomNumber(min, max)
