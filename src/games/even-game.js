@@ -2,11 +2,11 @@ import { getRandomNumber } from '../helpers/random-generator.js'
 
 const isEven = num => num % 2 === 0
 
+export const RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
+
 export const generateEvenRound = () => {
   const yes = 'yes'
   const no = 'no'
-
-  console.log(`Answer "${yes}" if the number is even, otherwise answer "${no}".`)
 
   const min = 1
   const max = 100

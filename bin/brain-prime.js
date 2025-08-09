@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { runGame } from './index.js'
-import { generatePrimeRound } from '../src/games/prime-game.js'
+import { runGame } from '../src/engine.js'
+import { generatePrimeRound, RULES } from '../src/games/prime-game.js'
 
-runGame(generatePrimeRound)
+runGame(generatePrimeRound, RULES)

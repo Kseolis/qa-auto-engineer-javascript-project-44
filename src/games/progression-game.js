@@ -8,9 +8,9 @@ const makeProgression = (start, step, length) => {
   return question
 }
 
-export const generateProgressionRound = () => {
-  console.log('What number is missing in the progression?')
+export const RULES = 'What number is missing in the progression?'
 
+export const generateProgressionRound = () => {
   const start = getRandomNumber(1, 100)
   const step = getRandomNumber(1, 10)
   const length = getRandomNumber(5, 10)
