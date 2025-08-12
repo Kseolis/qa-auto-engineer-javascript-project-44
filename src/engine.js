@@ -1,16 +1,11 @@
 import readlineSync from 'readline-sync'
-import { printWelcome, askUserName, printHello } from './greeting.js'
+import { welcomeUser} from './greeting.js'
 
-export const runGame = (generateGameRound, rulesMessage) => {
+export const runGame = (generateGameRound, description) => {
   const roundsCount = 3
 
-  printWelcome()
-  const name = askUserName()
-  printHello(name)
-
-  if (rulesMessage) {
-    console.log(rulesMessage)
-  }
+  welcomeUser()
+  console.log(description)
 
   for (let i = 0; i < roundsCount; i++) {
     const { question, correctAnswer } = generateGameRound()

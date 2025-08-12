@@ -8,7 +8,13 @@ const makeProgression = (start, step, length) => {
   return question
 }
 
-export const RULES = 'What number is missing in the progression?'
+const createProgressionString = (progression, hiddenIndex) => {
+  const result = [...progression] // создаем копию массива
+  result[hiddenIndex] = '..'
+  return result.join(' ')
+}
+
+export const description = 'What number is missing in the progression?'
 
 export const generateProgressionRound = () => {
   const start = getRandomNumber(1, 100)
@@ -18,9 +24,7 @@ export const generateProgressionRound = () => {
 
   const progression = makeProgression(start, step, length)
   const correctAnswer = progression.at(hiddenIndex)
-  const question = progression
-    .map((number, id) => (id === hiddenIndex ? '..' : number))
-    .join(' ')
+  const question = createProgressionString(progression, hiddenIndex)
 
   return { question, correctAnswer }
 }

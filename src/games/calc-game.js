@@ -21,7 +21,7 @@ const getCalcResult = (num1, operator, num2) => {
   }
 }
 
-export const RULES = 'What is the result of the expression?'
+export const description = 'What is the result of the expression?'
 
 export const generateCalculationRound = () => {
   const num1 = getRandomNumber(min, max)

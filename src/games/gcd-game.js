@@ -12,7 +12,7 @@ const getGcd = (num1, num2) => {
   return nod
 }
 
-export const RULES = 'Find the greatest common divisor of given numbers.'
+export const description = 'Find the greatest common divisor of given numbers.'
 
 export const generateGcdRound = () => {
   const minNumber = 1

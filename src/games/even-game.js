@@ -2,7 +2,7 @@ import { getRandomNumber } from '../helpers/random-generator.js'
 
 const isEven = num => num % 2 === 0
 
-export const RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
+export const description = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 export const generateEvenRound = () => {
   const yes = 'yes'

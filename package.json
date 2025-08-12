@@ -13,12 +13,12 @@
   "license": "ISC",
   "author": "Kseolis",
   "type": "module",
-  "main": "index.js",
+  "main": "brain-games.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "brain-games": "bin/index.js",
+    "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js",
     "brain-gcd": "bin/brain-gcd.js",
